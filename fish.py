@@ -1,9 +1,20 @@
+''' fish.py will fish for you; using the controller will let you fish without
+Destiny being the active window.
+
+All coordinates given here are for a 1440p, 21:9 monitor.
+
+This needs to be started while standing at the dock with the prompt at the bottom
+of your screen.
+
+TODO: Test if it's possible to calculate the position of the watched pixels
+without hardcoding them.
+'''
+
 import inputs
 import time
 from ctypes import windll
 
 def fish(controller=False):
-    # All pixel coordinates are for or 1440p 21:9 monitor
     FISH_BUFF = (84, 870)
     FISH_COLOR = 10416786
     dc = windll.user32.GetDC(0)
