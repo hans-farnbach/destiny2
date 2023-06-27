@@ -1,3 +1,9 @@
+''' inputs.py is two classes - one for emulating mouse and keyboard, one for emulating a controller
+
+If you have modified your in-game keybindings, the associated commands will need to be modified
+here. Current setup is default keybindings.
+'''
+
 from pynput.keyboard import Controller as kc
 from pynput.keyboard import Key
 from pynput.mouse import Controller as mc
