@@ -9,3 +9,7 @@ This is where I will be putting any and all Destiny 2 macros I've created.
 ## Setup
 
 Turn in-game HUD capacity to `Full`
+
+## Usage
+
+`python main.py <options>`
